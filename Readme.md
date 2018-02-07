@@ -20,3 +20,9 @@ settings.jsonに以下を記載
 git init
 git add -A .
 git commit -m "Inisial commit"
+git config --global user.name [ユーザ名]
+git config --global user.email [emailアドレス]
+git remote add origin https://github.com/activeti/djangogirlsre.git
+git push origin master
+ 以下参照
+ [GitHub登録からプッシュまでの流れ](https://qiita.com/KosukeQiita/items/cf39d2922b77ac93f51d)
