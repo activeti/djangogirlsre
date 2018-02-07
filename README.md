@@ -79,3 +79,21 @@ pip freeze > requirements.txt
 
 ※ デプロイ環境とローカルの設定をファイルで指定する方法は必要だと思うので、
  あとで調べよう。
+
+
+ ## クエリセット
+ python manage.py shell とすると対話モードになる
+ ORMのコマンドがいろいろ打てる
+
+## テンプレート&静的ファイル
+
+静的ファイル置き場
+>blog/
+>    static/
+>        blog/
+>            css/
+>                blog.css
+
+load もstaticと記述するのみ チュートリアルみたいな設定は無し
+静的ファイルの置き方はこちら参照
+[Python Django入門 (4)](https://qiita.com/kaki_k/items/6e17597804437ef170ae)
