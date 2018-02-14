@@ -4,7 +4,7 @@ from django.utils import timezone
 
 
 class Post (models.Model):  # クラス名は大文字ではじめます
-    auther = models.ForeignKey('auth.User')
+    author = models.ForeignKey('auth.User')
     title = models.TextField(max_length=200)
     text = models.TextField()
     created_date = models.DateTimeField(default=timezone.now)
