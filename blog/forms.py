@@ -1,5 +1,5 @@
 from django import forms
-from .models import Post
+from .models import Post, Comment
 
 
 class PostForm(forms.ModelForm):
@@ -10,3 +10,10 @@ class PostForm(forms.ModelForm):
         # そのままだとTextfieldのデフォルトがtextareaの40colsのため
         # widgetsを使ってTextInputに変更
         widgets = {'title': forms.TextInput()}
+
+
+class CommentForm(forms.ModelForm):
+    
+    class Meta:
+        model = Comment
+        fields = ('author', 'text')
